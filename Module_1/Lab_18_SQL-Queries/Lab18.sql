@@ -1,5 +1,4 @@
-SHOW tables;
-USE ironhack_examples;
+use apple; 
 
 SELECT * from applestore;
 
@@ -16,49 +15,36 @@ SELECT COUNT(prime_genre) AS app_count, prime_genre FROM applestore
 GROUP BY prime_genre
 ORDER BY app_count DESC
 LIMIT 1;
-# the genre with most apps is 'Games'
+# the genre with most apps is "Games"
 
 # 4. Which is the one with least?
 SELECT COUNT(prime_genre) AS app_count, prime_genre FROM applestore
 GROUP BY prime_genre
 ORDER BY app_count ASC
 LIMIT 1;
-# the genre with least apps is 'medical' apps
+# the genre with least apps is "medical" apps
 
-USE ironhack_examples;
 # 5. Find the top 10 apps most rated.
 SELECT * FROM applestore
 ORDER BY rating_count_tot DESC
 LIMIT 10;
-
-SELECT * FROM applestore;
 
 # 6. Find the top 10 apps best rated by users.
 SELECT * FROM applestore
 ORDER BY user_rating DESC
 LIMIT 10;
 
-
 # 7. Take a look at the data you retrieved in question 5. Give some insights.
-# We can say that in the top 10 most rated apps, there is only one paid application.
+# In the top 10 most rated apps, there is only one paid application.
 # In the top 3 there are 2 Social Networking apps.
-SELECT * FROM applestore
-ORDER BY rating_count_tot DESC
-LIMIT 10;
-
 
 # 8. Take a look at the data you retrieved in question 6. Give some insights.
 # There are 8 paid apps out of 10 in the top 10 best rated apps.
-SELECT * FROM applestore
-ORDER BY user_rating DESC
-LIMIT 10;
-
 
 # 9. Now compare the data from questions 5 and 6. What do you see?
 # Best rated and the apps that has most ratings are different.
 # Paid apps are better rated.
-# Free apps have more ratings
-
+# Free apps has more ratings
 
 # 10. How could you take the top 3 regarding both user ratings and number of votes?
 # We can order by two columns first by user ratings then by number of votes.
@@ -70,4 +56,6 @@ LIMIT 10;
 SELECT * FROM applestore
 ORDER BY rating_count_tot DESC
 LIMIT 30;
-# People tend to go for free apps
+# People prefer free apps
+
+

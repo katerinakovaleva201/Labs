@@ -1,1 +1,5 @@
+Lab 24_1:
 https://public.tableau.com/app/profile/katerina.kovaleva/viz/Lab24_16764866562000/NFLTeamPerformanceDashboard
+
+Lab24_2:
+https://public.tableau.com/app/profile/katerina.kovaleva/viz/Lab24_2/Dashboard1
